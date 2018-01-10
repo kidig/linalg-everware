@@ -1,4 +1,4 @@
-FROM jupyterhub/singleuser:latest
+FROM jupyterhub/singleuser@sha256:5dd681bb378274d57c89116e9e1d4741716f72b90a6bda7d8397d1e1d6d89ef2
 
 RUN pip install numpy scipy matplotlib pandas ipywidgets scikit-learn
 RUN pip install nbgrader
