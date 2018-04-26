@@ -33,5 +33,7 @@ RUN jupyter nbextension disable --sys-prefix create_assignment/main
 RUN jupyter nbextension disable --sys-prefix formgrader/main --section=tree
 RUN jupyter serverextension disable --sys-prefix nbgrader.server_extensions.formgrader
 
+USER root
+
 COPY static/ static/
 RUN cat $HOME/static/custom/custom.js >> /opt/conda/lib/python3.6/site-packages/notebook/static/custom/custom.js
