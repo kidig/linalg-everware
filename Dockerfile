@@ -16,11 +16,15 @@ RUN pip install ipywidgets \
                 scikit-learn \
                 scipy
 
+USER root
+
 RUN cd /tmp && \
     git clone https://github.com/Savichev-Igor/nbgrader.git && \
     cd nbgrader && \
     git checkout feedback-email && \
     pip install .
+
+USER jovyan
 
 RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
 
