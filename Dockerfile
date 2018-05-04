@@ -19,7 +19,7 @@ RUN pip install ipywidgets \
 RUN cd /tmp && \
     git clone https://github.com/Savichev-Igor/nbgrader.git && \
     cd nbgrader && \
-    git checkout patches && \
+    git checkout feedback-email && \
     pip install .
 
 RUN jupyter nbextension enable --py --sys-prefix widgetsnbextension
