@@ -14,7 +14,8 @@ RUN pip install ipywidgets \
                 numpy \
                 pandas \
                 scikit-learn \
-                scipy
+                scipy \
+                nose
 
 USER root
 
