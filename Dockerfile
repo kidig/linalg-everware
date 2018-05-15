@@ -3,7 +3,7 @@ FROM jupyterhub/singleuser@sha256:5dd681bb378274d57c89116e9e1d4741716f72b90a6bda
 USER root
 
 RUN apt-get update && \
-    apt-get install -y \
+    apt-get install --yes \
     libgl1-mesa-glx \
     git
 
