@@ -22,7 +22,7 @@ USER root
 RUN cd /tmp && \
     git clone https://github.com/Savichev-Igor/nbgrader.git && \
     cd nbgrader && \
-    git checkout feedback-email && \
+    git checkout features && \
     pip install .
 
 USER jovyan
